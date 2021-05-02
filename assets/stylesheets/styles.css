@@ -964,7 +964,7 @@ header {
   background: #dad8d8;
   top: 0;
   left: 0;
-  height: 2.6em;
+  height: 4em;
   width: 100%;
 }
 main {
@@ -978,12 +978,22 @@ main:nth-last-child(3) {
   margin-bottom: 50vh;
 }
 footer {
-  height: 50vh;
+  font-family:
+  apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  Oxygen-Sans,
+  Ubuntu,
+  Cantarell,
+  "Helvetica Neue",
+  sans-serif;
+  height: 4em;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: whitesmoke;
+  background: #dad8d8;
   display: flex;
   align-items: center;
   justify-content: center;
