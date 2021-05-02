@@ -8,4 +8,6 @@ This content is largely based on the tutorial "How to create and host your own w
 ### ✅License
 Site is MIT licensed.
 
+🧙Hocus-pocus!
+
 
