@@ -1,8 +1,8 @@
 ::-moz-selection {
-  background: yellow;
+  background:  #ffc93b;
 }
 ::selection {
-  background: yellow;
+  background:  #ffc93b;
 }
 *,
 *::before,
@@ -70,8 +70,10 @@ h2 {
   letter-spacing: 0.25em;
 }
 h3 {
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+  font-size: 1.5rem;
   letter-spacing: 0.15em;
 }
 h4 {
@@ -149,11 +151,10 @@ ol.inverted > li::before {
   font-weight: normal;
 }
 a {
-  color: blue;
+  color: rgb(160, 100, 10);
   background-color: transparent;
   text-decoration: none;
 }
-/* a[rel="external"]:not(.label):hover, */
 a.language:hover span {
   text-decoration: underline;
 }
@@ -318,6 +319,9 @@ article {
     padding-bottom: 0em;
   }
 }
+.row:last-child {
+  padding-top: 2.5em;
+}
 
 /* Columns */
 /* Standard 16 column */
@@ -415,22 +419,6 @@ article {
     padding: 0.5em !important;
   }
 }
-
-/* Mobile only column */
-/* [class*="mobile only"].grid,
-.grid > [class*="mobile only"].row,
-.grid > [class*="mobile only"].column,
-.grid > .row > [class*="mobile only"].column {
-  display: none;
-}
-@media only screen and (max-width: 767px) {
-  [class*="mobile only"].grid,
-  .grid > [class*="mobile only"].row,
-  .grid > [class*="mobile only"].column,
-  .grid > .row > [class*="mobile only"].column {
-    display: block;
-  }
-} */
 
 /* Avatar */
 .avatar-wrapper {
@@ -550,7 +538,7 @@ article {
 }
 
 /* Native <details> element styling */
-details {
+/* details {
   display: block;
 }
 details > summary::-webkit-details-marker {
@@ -568,7 +556,7 @@ details > div::after {
   content: " ";
   clear: both;
   display: block;
-}
+} */
 
 /* Alternative to <details> compatible with Safari */
 .details > input {
@@ -642,11 +630,11 @@ li.details::before {
 }
 li.details > input {
   float: left;
-  margin-left: -1.5em;
+  margin-left: -1.9em;
 }
 
-/* Highlighted list item */
-li.highlighted {
+/* Highlighted item */
+.highlighted {
   padding: 0.5em;
   background: rgba(0, 0, 0, 0.04);
   border-radius: 4px;
@@ -688,6 +676,12 @@ li.bordered > ul > details > div {
 }
 .timeline > li p {
   margin: 0;
+}
+
+/*Honors*/
+ul.marked > li::before{
+  display: inline-block;
+  margin-left: -0.5em;
 }
 
 /* Tags */
@@ -877,16 +871,7 @@ main {
   position: relative;
 }
 footer {
-  font-family:
-  apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  Roboto,
-  Oxygen-Sans,
-  Ubuntu,
-  Cantarell,
-  "Helvetica Neue",
-  sans-serif;
+  font-family: "Arial", sans-serif;
   height: 4em;
   position: fixed;
   bottom: 0;
