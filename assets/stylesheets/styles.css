@@ -241,28 +241,25 @@ button:-moz-focusring,
 /* Article */
 article {
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   article {
     width: 723px;
-    margin-top: calc((100% - 723px) / 2);
-    margin-bottom: calc((100% - 723px) / 2);
+    margin: calc((100% - 723px) / 3.5) auto;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   article {
     width: 933px;
-    margin-top: calc((100% - 933px) / 2);
-    margin-bottom: calc((100% - 933px) / 2);
+    margin: calc((100% - 933px) / 3.5) auto;
   }
 }
 @media only screen and (min-width: 1200px) {
   article {
     width: 1127px;
-    margin-top: calc((100% - 1127px) / 2);
-    margin-bottom: calc((100% - 1127px) / 2);
+    margin: calc((100% - 1127px) / 3.5) auto;
   }
 }
 
@@ -271,38 +268,17 @@ article {
   position: relative;
   padding: 3em;
   background: white;
-  box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
+  box-shadow: 0 0 15px 0 rgba(34, 36, 38, 0.2);
   transition: box-shadow 0.2s linear;
-}
-.page[style^="border-color"] {
-  padding: 4.5em;
-}
-.page[style^="border-color"]::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 2em;
-  top: 2em;
-  right: 2em;
-  bottom: 2em;
-  border-color: inherit;
-  border-width: 1em;
-  border-style: solid;
-  pointer-events: none;
-  transition: border-color 0.2s ease-in-out;
 }
 @media only screen {
   .page:hover {
-    box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.3);
+    box-shadow: 0 0 15px 0 rgba(34, 36, 38, 0.3);
   }
 }
 @media only screen and (max-width: 767px) {
-  .page,
-  .page[style^="border-color"] {
+  .page{
     padding: 0;
-  }
-  .page[style^="border-color"]::before {
-    display: none;
   }
 }
 
@@ -968,14 +944,12 @@ header {
   width: 100%;
 }
 main {
-  margin-top: 2em;
+  margin-top: 4em;
+  margin-bottom: 4em;
   overflow: auto;
   z-index: 2;
-  background: white;
+  background: #dad8d8;
   position: relative;
-}
-main:nth-last-child(3) {
-  margin-bottom: 50vh;
 }
 footer {
   font-family:
@@ -1003,6 +977,9 @@ footer {
   header {
     display: none;
   }
+  main {
+    margin-top: 5%;
+  }
 }
 @media print {
   header,
@@ -1011,8 +988,6 @@ footer {
   }
   main {
     margin-top: 0;
-  }
-  main:nth-last-child(3) {
     margin-bottom: 0;
   }
 }
