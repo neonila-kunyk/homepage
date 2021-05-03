@@ -295,10 +295,6 @@ article {
   flex-wrap: wrap;
   align-items: stretch;
   padding: 0;
-  /**
-   * Temporary hack to be sure avatar
-   * is rendered on print preview
-   */
   display: block !important;
 }
 .grid .grid {
@@ -315,9 +311,11 @@ article {
   justify-content: inherit;
   align-items: stretch;
   width: 100% !important;
-  padding: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+  outline: 10px solid #ffc93b;
+}
+.row:first-child {
+  background-color: #ffc93b;
 }
 
 /* Columns */
@@ -388,6 +386,23 @@ article {
   text-align: center;
 }
 
+/*Specific column styles*/
+.grid > .row > [class*="five wide"].column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  /* .name,
+  .job,
+  .contacts {
+    text-align: center;
+  } */
+  .grid > .row > [class*="five wide"].column{
+    align-items: center;
+  }
+}
+
 /* Stackable */
 @media only screen and (max-width: 767px) {
   .stackable.grid > .row > .wide.column,
@@ -403,7 +418,7 @@ article {
 }
 
 /* Mobile only column */
-[class*="mobile only"].grid,
+/* [class*="mobile only"].grid,
 .grid > [class*="mobile only"].row,
 .grid > [class*="mobile only"].column,
 .grid > .row > [class*="mobile only"].column {
@@ -416,7 +431,7 @@ article {
   .grid > .row > [class*="mobile only"].column {
     display: block;
   }
-}
+} */
 
 /* Avatar */
 .avatar-wrapper {
@@ -436,15 +451,6 @@ article {
   .avatar-wrapper {
     padding: 0;
   }
-}
-
-/* Divider */
-.divider {
-  border-top: 1px solid rgba(222, 222, 222, 1);
-}
-.divider.fat {
-  border-top: 0.3571428571428571em solid rgba(10, 10, 10, 1);
-  width: 33%;
 }
 
 /* Language */
@@ -477,26 +483,31 @@ article {
   margin-right: 0.5em;
 }
 
+/* Name*/
+.name{
+  font-family: 'Stardos Stencil', cursive;
+  font-weight: 500;
+  font-size: 4em;
+}
+
 /* Job */
 .job {
-  margin-bottom: 0.25rem;
+  margin: 1rem 0;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 /* Contacts */
 .contacts {
   list-style: none outside none;
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
-  white-space: nowrap;
-  font-size: 0.9em;
+  font-size: 2em;
   font-weight: 400;
 }
 .contacts li {
-  margin-bottom: 0.25rem;
-  margin-right: 1em;
+  margin: 0.5em 1em 0.5em 0;
 }
 .contacts li::before {
   display: none;
@@ -505,42 +516,22 @@ article {
   color: black;
   transition: color 0.2s ease-in-out;
 }
-.contacts li a.facebook:hover {
-  color: #3b5998;
+.contacts li a span{
+  vertical-align: middle;
 }
-.contacts li a.quora:hover {
-  color: dimgrey;
-}
-.contacts li a.mail:hover {
-  color: dimgrey;
-}
-.contacts li a.skype:hover {
-  color: #00aff0;
-}
-.contacts li a.linkedin:hover {
-  color: #0077b5;
-}
-.contacts li a.telegram:hover {
-  color: #08c;
-}
-.contacts li a.phone:hover {
-  color: dimgrey;
+.contacts li a:hover {
+  color: #dad8d8;
 }
 .contacts li a.website {
   display: none;
 }
 .contacts li a .icon {
   fill: currentColor;
-  height: 1.1428rem;
+  height: 2rem;
   vertical-align: text-bottom;
 }
 
 @media only screen and (max-width: 767px) {
-  .name,
-  .job,
-  .contacts {
-    text-align: center;
-  }
   .contacts li {
     margin-right: 0;
   }
