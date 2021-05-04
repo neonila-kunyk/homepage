@@ -278,17 +278,6 @@ article {
   .page {
     padding: 0;
   }
-  .page:hover > .grid > .row:first-child{
-    background-color: white;
-    transition: background-color 0.05s linear;
-  }
-  .page:hover > .grid > .row{
-    outline: 10px none #ffc93b;
-  }
-  .page:hover >.grid > .row > [class*="sixteen wide"].column{
-    background-color: white;
-    transition: background-color 0.05s linear;
-  }
 }
 
 /**
