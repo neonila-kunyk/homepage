@@ -219,8 +219,8 @@ button:-moz-focusring,
 /* Article */
 article {
   max-width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   article {
@@ -947,7 +947,7 @@ footer {
     display: none;
   }
   main {
-    margin-top: 5%;
+    margin-top: 7%;
   }
 }
 @media print {
