@@ -1,8 +1,8 @@
 ::-moz-selection {
-  background:  #ffc93b;
+  background: #ffc93b;
 }
 ::selection {
-  background:  #ffc93b;
+  background: #ffc93b;
 }
 *,
 *::before,
@@ -23,19 +23,9 @@ body {
   background-color: #dad8d8;
 }
 body {
-  font-family:
-   "Comic Sans MS", 
-   "Comic Sans", 
-   cursive,
-   apple-system,
-   BlinkMacSystemFont,
-   "Segoe UI",
-   Roboto,
-   Oxygen-Sans,
-   Ubuntu,
-   Cantarell,
-   "Helvetica Neue",
-   sans-serif;
+  font-family: "Comic Sans MS", "Comic Sans", cursive, apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
 }
 h1,
 h2,
@@ -103,9 +93,6 @@ p:last-child {
 }
 strong {
   font-weight: 600;
-}
-small {
-  font-size: 80%;
 }
 ul,
 ol {
@@ -229,11 +216,6 @@ button:-moz-focusring,
   padding: 0;
 }
 
-/* Utiltities */
-.nowrap {
-  white-space: nowrap;
-}
-
 /* Article */
 article {
   max-width: 100%;
@@ -273,7 +255,7 @@ article {
   }
 }
 @media only screen and (max-width: 767px) {
-  .page{
+  .page {
     padding: 0;
   }
 }
@@ -392,16 +374,16 @@ article {
 }
 
 /*Specific column styles*/
-.grid > .row > [class*="five wide"].column{
+.grid > .row > [class*="five wide"].column {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.grid > .row > [class*="sixteen wide"].column{
+.grid > .row > [class*="sixteen wide"].column {
   background-color: #ffc93b;
 }
 @media only screen and (max-width: 767px) {
-  .grid > .row > [class*="five wide"].column{
+  .grid > .row > [class*="five wide"].column {
     align-items: center;
   }
 }
@@ -450,7 +432,6 @@ article {
 /* Language */
 .language {
   font-weight: 600;
-  white-space: nowrap;
 }
 
 /* Labels */
@@ -478,8 +459,8 @@ article {
 }
 
 /* Name*/
-.name{
-  font-family: 'Stardos Stencil', cursive;
+.name {
+  font-family: "Stardos Stencil", cursive;
   font-weight: 500;
   font-size: 4em;
 }
@@ -510,7 +491,7 @@ article {
   color: black;
   transition: color 0.2s ease-in-out;
 }
-.contacts li a span{
+.contacts li a span {
   vertical-align: middle;
 }
 .contacts li a:hover {
@@ -538,7 +519,7 @@ article {
 }
 
 /* Native <details> element styling */
-/* details {
+details {
   display: block;
 }
 details > summary::-webkit-details-marker {
@@ -556,7 +537,7 @@ details > div::after {
   content: " ";
   clear: both;
   display: block;
-} */
+}
 
 /* Alternative to <details> compatible with Safari */
 .details > input {
@@ -679,15 +660,11 @@ li.bordered > ul > details > div {
 }
 
 /*Honors*/
-ul.marked > li::before{
+ul.marked > li::before {
   display: inline-block;
   margin-left: -0.5em;
 }
 
-/* Tags */
-.tags.small {
-  font-size: 0.88em;
-}
 .tags.bulleted .tag:not(:last-child)::after {
   content: "●";
   display: inline-block;
@@ -695,6 +672,47 @@ ul.marked > li::before{
   font-size: 1rem;
   margin: 0 0.25em 0 0.25em;
 }
+
+/* Smiley*/
+.smiley-story {
+  margin-bottom: 1.5em;
+  padding: 0;
+}
+.smiley-message {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.9em;
+}
+.smiley-message > span{
+  padding-left: 0.5em;
+  outline: 0.1em solid rgb(160, 100, 10);
+}
+.smiley-message > span:first-child {
+  padding-left: 1em;
+  background-color:rgb(160, 100, 10);
+  color: white;
+}
+.smiley-message > span > span:last-child{
+  padding: 0 0.5em;
+  border-radius: 10em;
+  background-color: #dad8d8;
+}
+
+/*Quotes*/
+.quotes{
+  margin-left: -0.4em;
+}
+.quotes > li > p{
+  display: flex;
+  flex-direction: column;
+}
+.quotes > li:not(:last-child){
+  margin-bottom: 1em;
+}
+.quotes cite{
+  font-weight: 600;
+}
+
 
 /* Print */
 @media print {
@@ -845,7 +863,7 @@ button.audio svg {
 .credits:hover {
   opacity: 1;
 }
-.credits>a{
+.credits > a {
   color: #ffe602;
   text-shadow: #333126 0 0 2px;
 }
