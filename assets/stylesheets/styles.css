@@ -659,6 +659,24 @@ li.bordered > ul > details > div {
   margin: 0;
 }
 
+.show-items,
+.hide-items{
+  text-align: center;
+  font-weight: 600;
+  line-height: 1em;
+  margin: 0;
+}
+.show-items:hover,
+.hide-items:hover{
+  color: #dad8d8;
+  text-shadow: #000000 0 0 3px;
+  cursor: pointer;
+}
+.hide-items,
+.show-items + ul{
+  display: none;
+}
+
 /*Honors*/
 ul.marked > li::before {
   display: inline-block;
