@@ -28,31 +28,19 @@ body {
     "Helvetica Neue", sans-serif;
 }
 h1,
-h2,
-h3,
-h4,
-h5 {
+h3 {
   line-height: 1.28571429em;
   margin: 0 0 1rem 0;
   font-weight: bold;
   padding: 0;
 }
 h1:last-child,
-h2:last-child,
-h3:last-child,
-h4:last-child,
-h5:last-child {
+h3:last-child {
   margin-bottom: 0;
 }
 h1,
-h2,
 h3 {
   text-transform: uppercase;
-}
-h1 {
-  font-weight: 900;
-  font-size: 1.5rem;
-  margin-bottom: 0;
 }
 h2 {
   font-weight: 900;
@@ -65,18 +53,6 @@ h3 {
   font-weight: 800;
   font-size: 1.5rem;
   letter-spacing: 0.15em;
-}
-h4 {
-  font-size: 1.125rem;
-}
-h5 {
-  font-size: 1rem;
-}
-h6 {
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin: 0 0 1em 0;
 }
 section {
   padding: 1em 0;
@@ -94,14 +70,10 @@ p:last-child {
 strong {
   font-weight: 600;
 }
-ul,
-ol {
+ul {
   list-style: none outside none;
   padding-left: 1.5em;
   margin: 0;
-}
-ol {
-  counter-reset: ol-counter;
 }
 li {
   list-style: none outside none;
@@ -113,29 +85,6 @@ ul > li::before {
   width: 1.5em;
   margin-left: -1.5em;
   text-align: center;
-}
-ol > li::before {
-  content: counter(ol-counter);
-  counter-increment: ol-counter;
-  float: left;
-  width: 1rem;
-  border-radius: 0.25em;
-  background: transparent;
-  color: inherit;
-  font-weight: bold;
-  font-size: 0.7em;
-  font-family: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: calc(-1.5rem + 0.5rem / 2);
-  height: 1rem;
-  margin-top: calc((1.4285rem - 1rem) / 2);
-}
-ol.inverted > li::before {
-  background: black;
-  color: white;
-  font-weight: normal;
 }
 a {
   color: rgb(160, 100, 10);
@@ -152,20 +101,21 @@ code {
   background: #eee;
   font-size: 95%;
 }
+canvas{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+}
 
-/* Prevent `sub` and `sup` elements from affecting the line height in all browsers */
-sub,
+/* Prevent `sup` elements from affecting the line height in all browsers */
 sup {
   font-size: 75%;
   line-height: 0;
+  top: -0.5em;
   position: relative;
   vertical-align: baseline;
-}
-sub {
-  bottom: -0.25em;
-}
-sup {
-  top: -0.5em;
 }
 
 /* Remove the border on images inside links in IE 10 */
@@ -173,54 +123,11 @@ img {
   border-style: none;
 }
 
-/* Change the font styles in all browsers, remove the margin in Firefox and Safari */
-button,
-input {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
-
-  /* Show the overflow in IE and Edge */
-  overflow: visible;
-}
-
-/* Remove the inheritance of text transform in Edge, Firefox, and IE */
-button {
-  text-transform: none;
-}
-
-/* Correct the inability to style clickable types in iOS and Safari	*/
-button,
-[type="button"] {
-  -webkit-appearance: button;
-  appearance: button;
-}
-
-/* Remove the inner border and padding in Firefox	*/
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/* Restore the focus styles unset by the previous rule */
-button:-moz-focusring,
-[type="button"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/* Add the correct box sizing in IE 10, remove the padding in IE 10 */
-[type="checkbox"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
 /* Article */
 article {
   max-width: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   article {
@@ -253,6 +160,17 @@ article {
   .page:hover {
     box-shadow: 0 0 15px 0 rgba(34, 36, 38, 0.3);
   }
+  .page:hover > .grid > .row:first-child{
+    background-color: #ffc93b;
+    transition: background-color 0.05s linear;
+  }
+  .page:hover > .grid > .row{
+    outline: 10px solid #ffc93b;
+  }
+  .page:hover >.grid > .row > [class*="sixteen wide"].column{
+    background-color: #ffc93b;
+    transition: background-color 0.05s linear;
+  }
 }
 @media only screen and (max-width: 767px) {
   .page {
@@ -275,10 +193,6 @@ article {
   padding: 0;
   display: block !important;
 }
-.grid .grid {
-  margin-left: -1em;
-  margin-right: -1em;
-}
 
 /* Rows */
 .grid > .row {
@@ -290,15 +204,17 @@ article {
   align-items: stretch;
   width: 100% !important;
   padding: 1rem 0;
-  outline: 10px solid #ffc93b;
 }
 .row:first-child {
-  background-color: #ffc93b;
   padding-bottom: 4em;
 }
 @media only screen and (max-width: 767px) {
   .row:first-child {
     padding-bottom: 0em;
+    background-color: #ffc93b;
+  }
+  .grid > .row{
+    outline: 10px solid #ffc93b;
   }
 }
 .row:last-child {
@@ -379,12 +295,12 @@ article {
   flex-direction: column;
   justify-content: center;
 }
-.grid > .row > [class*="sixteen wide"].column {
-  background-color: #ffc93b;
-}
 @media only screen and (max-width: 767px) {
   .grid > .row > [class*="five wide"].column {
     align-items: center;
+  }
+  .grid > .row > [class*="sixteen wide"].column{
+    background-color: #ffc93b;
   }
 }
 
@@ -621,25 +537,6 @@ li.details > input {
   border-radius: 4px;
 }
 
-/* Bordered list item */
-li.bordered {
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 4px;
-  padding: 0.5em;
-  transition: all 0.2s linear;
-}
-li.bordered:hover {
-  background: #fafafa;
-}
-li.bordered > ul > li.details > div,
-li.bordered > ul > details > div {
-  padding: 0.5em 0.5em 0 2em;
-  border-top: 1px solid rgb(224, 224, 224);
-  margin-top: 0.5em;
-  margin-left: -2em;
-  margin-right: -0.5em;
-}
-
 /* Timeline */
 .timeline {
   list-style: none outside none;
@@ -657,6 +554,24 @@ li.bordered > ul > details > div {
 }
 .timeline > li p {
   margin: 0;
+}
+
+.show-items,
+.hide-items{
+  text-align: center;
+  font-weight: 600;
+  line-height: 1em;
+  margin: 0;
+}
+.show-items:hover,
+.hide-items:hover{
+  color: #dad8d8;
+  text-shadow: #000000 0 0 3px;
+  cursor: pointer;
+}
+.hide-items,
+.show-items + ul{
+  display: none;
 }
 
 /*Honors*/
@@ -739,115 +654,6 @@ ul.marked > li::before {
   }
 }
 
-/* Color */
-.color {
-  cursor: pointer;
-  white-space: nowrap;
-  background: inherit;
-  color: inherit;
-  font: inherit;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-.color::before {
-  content: " ";
-  display: inline-block;
-  border-radius: 100%;
-  margin: 0.27em;
-  height: 0.88em;
-  width: 0.88em;
-  vertical-align: top;
-  position: relative;
-}
-.color.midnightblue::before {
-  background-color: midnightblue;
-}
-.color.chartreuse::before {
-  background-color: chartreuse;
-}
-
-/* Audio button */
-button.audio {
-  cursor: pointer;
-  background: inherit;
-  font: inherit;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-button.audio svg {
-  height: 16px;
-  width: 16px;
-  vertical-align: text-top;
-}
-
-/* Resume */
-#resume {
-  color: inherit;
-  transition: 0.2s;
-  opacity: 0.75;
-  padding: 0 0.25em 0.25em 0.25em;
-  margin-left: -0.25em;
-  display: inline-block;
-}
-#resume:hover {
-  opacity: 1;
-}
-#resume .dots {
-  background: #808080;
-  color: white;
-  padding: 0 0.2em;
-  border-radius: 3px;
-  height: 1em;
-  line-height: 1em;
-  margin-top: 0.2857142857em;
-  float: left;
-  margin-right: 0.2857142857em;
-}
-#resume .dots .dot {
-  float: left;
-  height: 0.42857142857em;
-  width: 0.42857142857em;
-  background: white;
-  border-radius: 100%;
-  margin-top: 0.2857142857em;
-  vertical-align: top;
-}
-#resume .dots .dot:not(:last-child) {
-  margin-right: 0.2142857em;
-}
-
-/* Close */
-.close {
-  text-indent: -9999px;
-  position: absolute;
-  z-index: 1;
-  top: 2em;
-  left: 2em;
-  display: inline-block;
-  width: 4em;
-  height: 4em;
-  overflow: hidden;
-}
-.close::before,
-.close::after {
-  content: " ";
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 0;
-  margin-top: -1px;
-  background: white;
-  height: 1px;
-}
-.close::before {
-  transform: rotate(45deg);
-}
-.close::after {
-  transform: rotate(-45deg);
-}
-
 /* Credits */
 .credits {
   display: flex;
@@ -883,7 +689,6 @@ header {
 main {
   margin-top: 4em;
   margin-bottom: 4em;
-  overflow: auto;
   z-index: 2;
   background: #dad8d8;
   position: relative;
@@ -906,7 +711,7 @@ footer {
     display: none;
   }
   main {
-    margin-top: 5%;
+    margin-top: 7%;
   }
 }
 @media print {
