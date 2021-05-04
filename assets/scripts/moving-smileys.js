@@ -1,19 +1,20 @@
 document.querySelector('.page').onpointerenter = (event) => {
 	if (event.pointerType === 'mouse') {
-    	canvas.style.display = 'none'
+    	canvas.style.display = 'none';
 		continueAnimating = false;
 		loop();
 	}
 }
 document.querySelector('.page').onpointerleave = (event) => {
 	if (event.pointerType === 'mouse') {
-    	canvas.style.display = 'block'
+    	canvas.style.display = 'block';
 		continueAnimating = true;
 		loop();
 	}
 }
 window.onload = () => {
 	if(window.innerWidth > 767) loop();
+	else canvas.style.display = 'none';
 };
 
 // configure the canvas
