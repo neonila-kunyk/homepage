@@ -253,10 +253,32 @@ article {
   .page:hover {
     box-shadow: 0 0 15px 0 rgba(34, 36, 38, 0.3);
   }
+  .page:hover > .grid > .row:first-child{
+    background-color: #ffc93b;
+    transition: background-color 0.05s linear;
+  }
+  .page:hover > .grid > .row{
+    outline: 10px solid #ffc93b;
+  }
+  .page:hover >.grid > .row > [class*="sixteen wide"].column{
+    background-color: #ffc93b;
+    transition: background-color 0.05s linear;
+  }
 }
 @media only screen and (max-width: 767px) {
   .page {
     padding: 0;
+  }
+  .page:hover > .grid > .row:first-child{
+    background-color: white;
+    transition: background-color 0.05s linear;
+  }
+  .page:hover > .grid > .row{
+    outline: 10px none #ffc93b;
+  }
+  .page:hover >.grid > .row > [class*="sixteen wide"].column{
+    background-color: white;
+    transition: background-color 0.05s linear;
   }
 }
 
@@ -290,15 +312,17 @@ article {
   align-items: stretch;
   width: 100% !important;
   padding: 1rem 0;
-  outline: 10px solid #ffc93b;
 }
 .row:first-child {
-  background-color: #ffc93b;
   padding-bottom: 4em;
 }
 @media only screen and (max-width: 767px) {
   .row:first-child {
     padding-bottom: 0em;
+    background-color: #ffc93b;
+  }
+  .grid > .row{
+    outline: 10px solid #ffc93b;
   }
 }
 .row:last-child {
@@ -379,12 +403,12 @@ article {
   flex-direction: column;
   justify-content: center;
 }
-.grid > .row > [class*="sixteen wide"].column {
-  background-color: #ffc93b;
-}
 @media only screen and (max-width: 767px) {
   .grid > .row > [class*="five wide"].column {
     align-items: center;
+  }
+  .grid > .row > [class*="sixteen wide"].column{
+    background-color: #ffc93b;
   }
 }
 
