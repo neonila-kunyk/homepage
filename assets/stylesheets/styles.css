@@ -698,6 +698,22 @@ ul.marked > li::before {
   background-color: #dad8d8;
 }
 
+/*Quotes*/
+.quotes{
+  margin-left: -0.4em;
+}
+.quotes > li > p{
+  display: flex;
+  flex-direction: column;
+}
+.quotes > li:not(:last-child){
+  margin-bottom: 1em;
+}
+.quotes cite{
+  font-weight: 600;
+}
+
+
 /* Print */
 @media print {
   .page,
