@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -12,11 +12,11 @@
   <meta name="theme-color" content="white">
 
   <meta name="description" content="Personal website of Scott E. Fahlman.">
-  <meta content="This is a résumé." name="subject" />
+  <meta content="This is a resume." name="subject" />
 
   <meta property="og:description"
     content="&mdash; I am a Professor Emeritus in Carnegie Mellon’s School of Computer Science (SCS). That means I am formally retired, but still active in research, advising, and departmental activities. At first, it worried me that I was better known as a smiley creator than an AI researcher. But then I decided that it’s even fun to be a little famous for something, even if it’s not a business that I’ve devoted my whole life to.">
-  <meta property="og:title" content="Scott Fahlman &mdash; Résumé">
+  <meta property="og:title" content="Scott Fahlman &mdash; Resume">
   <meta property="og:url" content="https://neonila-kunyk.github.io/homepage/">
   <meta property="og:image" content="./assets/images/avatar.png">
   <meta property="og:image:alt" content="Photo of Scott Fahlman">
@@ -25,7 +25,7 @@
 
   <meta property="twitter:description"
     content="&mdash; I am a Professor Emeritus in Carnegie Mellon’s School of Computer Science (SCS). That means I am formally retired, but still active in research, advising, and departmental activities. At first, it worried me that I was better known as a smiley creator than an AI researcher. But then I decided that it’s even fun to be a little famous for something, even if it’s not a business that I’ve devoted my whole life to.">
-  <meta property="twitter:title" content="Scott Fahlman &mdash; Résumé">
+  <meta property="twitter:title" content="Scott Fahlman &mdash; Resume">
   <meta property="twitter:url" content="https://neonila-kunyk.github.io/homepage/">
   <meta property="twitter:image" content="./assets/images/avatar.png">
   <meta property="twitter:image:alt" content="Photo of Scott Fahlman">
@@ -34,19 +34,696 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
-  <link rel="mask-icon" href="./assets/images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="./assets/images/safari-pinned-tab.svg">
   <link rel="shortcut icon" href="./assets/images/favicon.ico">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="./assets/images/browserconfig.xml">
   <link rel="manifest" href="./manifest.json">
 
   <link rel="stylesheet" href="./assets/stylesheets/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@700&display=swap" rel="stylesheet">
   <base href="https://neonila-kunyk.github.io/homepage/">
-  <title>Scott Fahlman &mdash; Résumé</title>
+  <title>Scott Fahlman &mdash; Resume</title>
 </head>
 
 <body>
-  ― Hello World! &#x1F609;
+  <header>
+    <div class="credits">
+      <span>😉 Created using</span>
+      <a href="https://volodymyrkushnir.com/" rel="external"><strong>volodymyrkushnir.com</strong></a>
+    </div>
+  </header>
+  <main>
+    <article>
+      <div class="page">
+        <div class="stackable grid">
+          <div class="row">
+            <div class="five wide center aligned column">
+              <h1 class="name">Scott Fahlman</h1>
+              <div class="job">researcher, computer scientist</div>
+            </div>
+            <div class="six wide center aligned column">
+              <div class="avatar-wrapper">
+                <img class="avatar" src="./assets/images/photo.png" alt="Profile picture of Scott Fahlman ">
+              </div>
+            </div>
+            <div class="five wide column">
+              <ul class="contacts">
+                <li>
+                  <a href="https://www.facebook.com/scott.fahlman" class="facebook">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path
+                        d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z" />
+                    </svg>
+                    <span>scott.fahlman</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.quora.com/profile/Scott-E-Fahlman" class="quora">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                      <path fill="currentColor"
+                        d="M440.5 386.7h-29.3c-1.5 13.5-10.5 30.8-33 30.8-20.5 0-35.3-14.2-49.5-35.8 44.2-34.2 74.7-87.5 74.7-153C403.5 111.2 306.8 32 205 32 105.3 32 7.3 111.7 7.3 228.7c0 134.1 131.3 221.6 249 189C276 451.3 302 480 351.5 480c81.8 0 90.8-75.3 89-93.3zM297 329.2C277.5 300 253.3 277 205.5 277c-30.5 0-54.3 10-69 22.8l12.2 24.3c6.2-3 13-4 19.8-4 35.5 0 53.7 30.8 69.2 61.3-10 3-20.7 4.2-32.7 4.2-75 0-107.5-53-107.5-156.7C97.5 124.5 130 71 205 71c76.2 0 108.7 53.5 108.7 157.7.1 41.8-5.4 75.6-16.7 100.5z">
+                      </path>
+                    </svg>
+                    <span>Scott-E-Fahlman</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:sef@cs.cmu.edu" class="mail">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                      </path>
+                    </svg>
+                    <span>sef@cs.cmu.edu</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+1-412-268-2575" class="phone">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                      <path
+                        d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z">
+                      </path>
+                    </svg>
+                    <span>+1-412-268-2575</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="sixteen wide column">
+              <p class="intro">&mdash; I am a Professor Emeritus in Carnegie Mellon’s School of Computer Science (SCS).
+                That means I am formally retired, but still active in research, advising, and departmental activities.
+                At first, it worried me that I was better known as a smiley creator than an AI researcher. But then I
+                decided that it’s even fun to be a little famous for something, even if it’s not a business that I’ve
+                devoted my whole life to.</p>
+            </div>
+          </div>
+          <div class="row">
+            <canvas>Moving emoticons</canvas>
+            <div class="ten wide column">
+              <section>
+                <h3>EDUCATION</h3>
+                <ul class="timeline">
+                  <li class="highlighted">
+                    <p><em>1977</em></p>
+                    <p><strong>Ph.D.</strong> in <strong><a href="https://www.csail.mit.edu/" rel="external">Artificial
+                          Intelligence, Massachusetts Institute of Technology.</a></strong></p>
+                    <p>Dissertation in the M.I.T. Artificial Intelligence Laboratory under Professor Gerald J. Sussman:
+                      "NETL: A System for Representing and Using Real-World Knowledge".</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1973</em></p>
+                    <p><strong>M.S.</strong> in <strong><a href="https://www.eecs.mit.edu/" rel="external">Electrical
+                          Engineering and Computer Science, Massachusetts Institute of Technology.</a></strong></p>
+                    <p>Master's thesis under Professor Patrick H. Winston: "A Planning System for Robot Construction
+                      Tasks".
+                    </p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1973</em></p>
+                    <p><strong>B.S.</strong> in <strong><a href="https://www.eecs.mit.edu/" rel="external">Electrical
+                          Engineering and Computer Science, Massachusetts Institute of Technology.</a></strong></p>
+                  </li>
+                </ul>
+              </section>
+              <section>
+                <h3>EMPLOYMENT</h3>
+                <ul class="timeline">
+                  <li class="highlighted">
+                    <p><em>July 1978-Present</em></p>
+                    <ul>
+                      <li class="details">
+                        <input type="checkbox" id="carnegie-mellon-university">
+                        <label for="carnegie-mellon-university" class="summary">
+                          <strong><a href="https://www.cs.cmu.edu/" rel="external">Carnegie Mellon
+                              University</a></strong>
+                        </label>
+                        <div>
+                          <ul>
+                            <li><em><strong>since 2017</strong></em> Professor Emeritus </li>
+                            <li><em><strong>since 1994</strong></em> Research Professor of Computer Science</li>
+                            <li><em><strong>1984-1994</strong></em> Research Associate Professor</li>
+                            <li><em><strong>1978-1984</strong></em> Research Assistant Professor </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>July 2000- April 2003</em></p>
+                    <p><strong><a href="https://www.research.ibm.com/" rel="external">
+                          IBM T.J.Watson Research Center</a></strong></p>
+                    <p>Research Staff Member (On leave from CMU.)</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>May 1996-July 2000</em></p>
+                    <p><strong><a href="https://en.wikipedia.org/wiki/Justsystem_Pittsburgh_Research_Center"
+                          rel="external">
+                          Justsystem Pittsburgh Research Center, </a></strong>Pittsburgh PA</p>
+                    <p>President and Chief Technical Officer (On partial leave from CMU.)</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>September 1977–June 1978</em></p>
+                    <p><strong>N. E. Berg Company, </strong>Bedford NH</p>
+                    <p>Consultant, developing software for document production and a specialized operating system.</p>
+                  </li>
+                </ul>
+              </section>
+              <section>
+                <h3>HONORS</h3>
+                <ul class="timeline marked">
+                  <li class="highlighted">
+                    <p>Fellow of the American Association for Artificial Intelligence (AAAI).</p>
+                  </li>
+                  <li class="highlighted">
+                    <p>Outstanding Technology Contributions Award, Web Intelligence Consortium, 2013.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p>Quora Top Writer, 2016-present.</p>
+                  </li>
+                </ul>
+              </section>
+              <section>
+                <h3>PATENTS</h3>
+                <p class="highlighted">US Patent #5960080, <strong>"Method for transforming message containing sensitive
+                    information"</strong>>, Scott E. Fahlman, Rahul Sukthankar, Antoine Brusseau.</p>
+              </section>
+              <section>
+                <h3>PROFESSIONAL ACTIVITIES</h3>
+                <ul class="timeline">
+                  <li class="highlighted">
+                    <p><em>2014</em></p>
+                    <p>Keynote Speaker on "Scientific and Artistic Creativity", Regional Arts Education Day, Arts
+                      Education Collaborative, Pittsburgh.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2014-2015</em></p>
+                    <p>Member of the Coordinating Committee, World Communications Forum Davos.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2014</em></p>
+                    <p>Keynote Speaker, World Communications Forum Davos.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2013</em></p>
+                    <p>Keynote Speaker and Workshop Organizer, IEEE Conference on Web Intelligence/Intelligent Agent
+                      Technology.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2012-2013</em></p>
+                    <p>Member of the editorial board for Advances in Cognitive Systems online journal.</p>
+                  </li>
+                </ul>
+                <p class="show-items">Show other items</p>
+                <ul class="timeline">
+                  <li class="highlighted">
+                    <p><em>1993-1998</em></p>
+                    <p>Associate editor for the journal Neural Computation.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1996-1998</em></p>
+                    <p>Member of the editorial board for the journal Neurocomputing.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1995</em></p>
+                    <p>Member, DARPA Software Research Review Panel.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1984 - 1987</em></p>
+                    <p>Member of Scientific Panel for Basics of Information Technology, Siemens Corporation Central
+                      Research Laboratories, Munich.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1987-1994</em></p>
+                    <p>Consultant for Siemens Corporation Central Research Laboratories, Munich.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1990-1994</em></p>
+                    <p>Member of the editorial board, AAAI Press.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1993-1994</em></p>
+                    <p>Program co-chair for Algorithms and Architectures, 1993 and 1994 Neural Information Processing
+                      Systems Conference.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1988-1992</em></p>
+                    <p>Member of the editorial board of IEEE Computer.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1988, 1992</em></p>
+                    <p>Keynote speaker twice at Australian National AI Conference: 1988 (Adelaide) and 1992 (Hobart).
+                    </p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1989-1992</em></p>
+                    <p>Workshop leader at 1989, 1990, 1991, 1992 NIPS conferences.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1992</em></p>
+                    <p>Invited participant, NSF Workshop on Grand Challenges in AI (Washington DC).</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1991</em></p>
+                    <p>Keynote speaker at 53rd Annual Conference of the Association of Business Professors (Linz,
+                      Austria).</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1990</em></p>
+                    <p>Invited panelist, Japanese Science Foundation, Science and Technology Forum '90 (Tsukuba, Japan).
+                    </p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1988</em></p>
+                    <p>Keynote speaker at 4th IEEE Conference on AI Applications (San Diego).</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1988</em></p>
+                    <p>Invited speaker, British Computer Society (London).</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1986 - 1988</em></p>
+                    <p>Member of X3J13 committee for the official standardization of Common Lisp.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1986, 1988</em></p>
+                    <p>Lecturer at 1986 and 1988 Connectionist Models Summer School.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1987</em></p>
+                    <p>Invited participant/speaker, IFIP Workshop on Concepts and Characteristics of Knowledge-Based
+                      Systems (Gotemba, Japan).</p>
+                  </li>
+                  <li class="highlighted">
+                    <p>Consultant (formerly) for Justsystem Corporation, Fostin Capital Associates, Digital Equipment
+                      Corporation, Lucid Inc, Data General, Xerox, IBM, Perq Systems, Expert Technologies Inc., Control
+                      Data Corporation, Carnegie Group, Texas Instruments, Topologix, Cable Howse & Cozadd,
+                      Warburg-Pincus Ventures.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p>Frequent reviewer for NSF funding proposals, major AI journals and conferences.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p>Member of the Association for Computing Machinery and the Association for the Advancement of
+                      Artificial Intelligence (AAAI).</p>
+                  </li>
+                </ul>
+                <p class="hide-items">Hide other items</p>
+              </section>
+              <section>
+                <h3>PUBLICATIONS</h3>
+                <ul class="timeline">
+                  <li class="highlighted">
+                    <p><em>2015</em></p>
+                    <p><strong>Sagae, A. and Fahlman, S.E.
+                        <em>"Image Retrieval with Textual Label Similarity Features"</em></strong></p>
+                    <p>Intelligent Systems in Accounting, Finance, and Management 2015, pages 1-13, John Wiley & Sons.
+                    </p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2013</em></p>
+                    <p><strong>Sagae, A. and Fahlman, S.E.
+                        <em>"Knowledge Resource Development for Identifying Matching Image Descriptions"</em></strong>
+                    </p>
+                    <p>in Proceedings of the 5th International Conference on Knowledge Engineering and Ontology
+                      Development (KEOD 2013).</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2012</em></p>
+                    <p><strong>Fahlman, S.E.
+                        <em>"Beyond Idiot-Savant AI"</em></strong></p>
+                    <p>in Advances in Cognitive Systems 1, pages 15-22.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2011</em></p>
+                    <p><strong>Santofimia, M. J., S.E. Fahlman, F. Moya, and J.C. Lopez
+                        <em>"A semantic model for actions and events in ambient intelligence"</em></strong></p>
+                    <p>Engineering Applications of Artificial Intelligence 24, pages 1432–1445.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2011</em></p>
+                    <p><strong>Fahlman, S.E.
+                        <em>"Using Scone’s multiple-context mechanism to emulate human-like reasoning"</em></strong></p>
+                    <p>Proceedings of the AAAI Fall Symposium on Advances in Cognitive Systems.</p>
+                  </li>
+                </ul>
+                <p class="show-items">Show other items</p>
+                <ul class="timeline">
+                  <li class="highlighted">
+                    <p><em>2010</em></p>
+                    <p><strong>Santofimia, M. J., S.E. Fahlman, F. Moya, and J.C. Lopez
+                        <em>"A Common-Sense Planning Strategy for Ambient Intelligence"</em></strong></p>
+                    <p>14th International Conference on Knowledge-Based and Intelligent Information and Engineering
+                      Systems (KES 2010), Cardiff, Wales, UK.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2010</em></p>
+                    <p><strong>Shultz, T.R. and S.E. Fahlman, S.E.
+                        <em>"Cascade-Correlation"</em></strong></p>
+                    <p>chapter in Encyclopedia of Machine Learning, C. Sammut and G. Webb (eds.), Springer-Verlag.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2007</em></p>
+                    <p><strong>Tribble, A. and S.E. Fahlman
+                        <em>"CMU-AT: Semantic Distance and Background Knowledge for Identifying Semantic
+                          Relations"</em></strong></p>
+                    <p>Proceedings of SemEval-2007: 4th International Workshop on Semantic Evaluations. Prague, Czech
+                      Republic, July 2007.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2006</em></p>
+                    <p><strong>Fahlman, S.E.
+                        <em>"Marker-Passing Inference in the Scone Knowledge-Base System"</em></strong></p>
+                    <p>First International Conference on Knowledge Science, Engineering and Management (KSEM'06),
+                      Guilin, China, August 2006. Proceedings published by and copyright by Springer-Verlag (Lecture
+                      Notes in AI).</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2006</em></p>
+                    <p><strong>Tribble, A., B. Lambert, and S.E. Fahlman
+                        <em>"SconeEdit: a Text-Guided Domain Knowledge Editor"</em></strong></p>
+                    <p>(demo) HLT-NAACL 2006 Conference, New York, June 2006.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2006</em></p>
+                    <p><strong>Tribble, A. and S.E. Fahlman
+                        <em>"Resolving Noun Compounds with Multi-Use Domain Knowledge"</em></strong></p>
+                    <p>FLAIRS 2006 conference, Melbourne Beach FL, May 2006.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>2002</em></p>
+                    <p><strong>Fahlman, S.E.
+                        <em>"Selling interrupt rights: a way to control unwanted E-mail and telephone
+                          calls"</em></strong></p>
+                    <p>IBM Systems Journal, Volume 41, Number 4, 2002, pages 759-766, November 2002.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1996</em></p>
+                    <p><strong>Fahlman, S. E., G. L. Steele Jr., H. Shrobe, B. Stroustrup, and C. A. Knoblock
+                        <em>"The Future of Lisp"</em></strong></p>
+                    <p>in IEEE Expert, vol. 11, no. 1, pp. 10-16, Feb. 1996.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1996</em></p>
+                    <p><strong>Taylor, D.L., L.D. Harris, R. DeBiasio, S.E. Fahlman, D.L. Farkas, F. Lanni, M. Nederlof
+                        and A.H. Gough
+                        <em>"Automated Interactive Microscopy: Measuring and Manipulating the Chemical and Molecular
+                          Dynamics of Cells and Tissues"</em></strong></p>
+                    <p>in Proceedings of the Conference on Functional Imaging and Optical Manipulation of Living Cells,
+                      SPIE Proc. v.2678.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1994</em></p>
+                    <p><strong>Baluja, S. and S. E. Fahlman
+                        <em>"Reducing Network Depth in the Cascade-Correlation Learning Architecture"</em></strong></p>
+                    <p>Tech Report CMU-CS-94-209, School of Computer Science, Carnegie Mellon University.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1993</em></p>
+                    <p><strong>Wah, B. W., S. E. Fahlman, and 22 co-authors
+                        <em>"Report on Workshop on High Performance Computing and Communications for Grand Challenge
+                          Applications: Computer Vision, Speech and Natural Language Processing, and Artificial
+                          Intelligence"</em></strong></p>
+                    <p>in IEEE Transactions on Knowledge and Data Engineering, Vol. 5, No. 1, February 1993.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1992</em></p>
+                    <p><strong>Hoehfeld, M. and S. E. Fahlman
+                        <em>"Probabilistic rounding in neural Network Learning with limited precision"</em></strong></p>
+                    <p>in Neurocomputing 4 (1992) pp. 291-299, Elsevier Science Publishers.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1992</em></p>
+                    <p><strong>Hoehfeld, M. and S. E. Fahlman
+                        <em>"Learning with Limited Numerical Precision Using the Cascade-Correlation Learning
+                          Algorithm"</em></strong></p>
+                    <p>in IEEE Transactions on Neural Networks, vol. 3, no. 4, pp. 602-611, July 1992.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1991</em></p>
+                    <p><strong>Fahlman, S.E.
+                        <em>"The Recurrent Cascade-Correlation Architecture"</em></strong></p>
+                    <p>in Advances in Neural Information Processing Systems 3, D. S. Touretzky (ed.), Morgan Kaufmann,
+                      Los Altos CA, pp. 190-196.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1990</em></p>
+                    <p><strong>Fahlman, S. E. and D. B. McDonald
+                        <em>"Design Considerations for CMU Common Lisp"</em></strong></p>
+                    <p>by Scott E. Fahlman and David B. McDonald, in Peter Lee (ed.) Advanced Language Implementation
+                      Techniques, Springer-Verlag.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1990</em></p>
+                    <p><strong>Fahlman, S. E. and C. Lebiere
+                        <em>"The Cascade-Correlation Learning Architecture"</em></strong></p>
+                    <p>in Advances in Neural Information Processing Systems 2, D. S. Touretzky (ed.), Morgan-Kaufmann,
+                      Los Altos CA, 1990, pp. 524-532. Reprinted in Artificial Neural Networks: Concepts and Theory, P.
+                      Mehra and B. W. Wah (eds.), IEEE Computer Society Press, 1992.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1990</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"What Can Massively Parallel Architectures Bring to AI?"</em></strong></p>
+                    <p>Proceedings of 2nd Australian Joint Artificial Intelligence Conference, C. J. Barter and M. J.
+                      Brooks (eds.), Springer Verlag (Lecture Notes in AI Series)./p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1989</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"Distributed Connectionist Systems for AI: Prospects and Problems"</em></strong></p>
+                    <p>by Scott E. Fahlman, in Concepts and Characteristics of Knowledge-Based Systems, M. Tokoro, Y.
+                      Anzai, and A.Yonezawa (eds.), North-Holland Publishers.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1988</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"Faster-Learning Variations on Back-Propagation: An Empirical Study"</em></strong></p>
+                    <p>in Proceedings, 1988 Connectionist Models Summer School, Morgan-Kaufmann, Los Altos CA.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1987</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"Common Lisp"</em></strong></p>
+                    <p>in Annual Review of Computer Science, Volume 2, 1987, Annual Reviews, Inc., Palo Alto, CA.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1987</em></p>
+                    <p><strong>Fahlman, S. E. and G. E. Hinton
+                        <em>"Connectionist Architectures for Artificial Intelligence"</em></strong></p>
+                    <p>in IEEE Computer, Vol. 20, number 1, January, 1987. Reprinted in Computers for Artificial
+                      Intelligence Processing B. W. Wah and C. V. Ramamoorthy (eds.), Wiley-Interscience, 1990. Also
+                      reprinted in Knowledge-Based Systems: Fundamentals and Tools, O. N. Garcia and Y. T. Chien (eds.),
+                      IEEE Computer Society Press, 1991).</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1988</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"Parallel Processing in Artificial Intelligence"</em></strong></p>
+                    <p>(full paper) in "Parallel Computation and Computers for Artificial Intelligence", J. S. Kowalik
+                      (editor), Kluwer Academic Publishers.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1985</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"Parallel Processing in Artificial Intelligence"</em></strong></p>
+                    <p>(extended abstract) in Parallel Processing 2, North-Holland Publishers.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1984</em></p>
+                    <p><strong>Wholey, J. S. and S. E. Fahlman
+                        <em>"Design of an Instruction Set for Common Lisp"</em></strong></p>
+                    <p>in Proceedings of 1984 ACM Conference on Lisp and Applicative Programming, Austin, Texas.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1984</em></p>
+                    <p><strong>Major contributor to Steele, G. L. Jr.
+                        <em>"Common Lisp: The Language"</em></strong></p>
+                    <p>Digital Press</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1984</em></p>
+                    <p><strong>Fahlman, S. E. and S. P. Harbison
+                        <em>"The Spice Project"</em></strong></p>
+                    <p>in Interactive Programming Environments, Barstow, Sandewall, and Shrobe (eds.), McGraw-Hill,
+                      1984.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1983</em></p>
+                    <p><strong>Fahlman, S. E., G. E. Hinton, and T. J. Sejnowski
+                        <em>"Massively Parallel Architectures for AI: NETL, Thistle, and Boltzmann
+                          Machines"</em></strong></p>
+                    <p>in Proceedings of the AAAI-83 Conference, Morgan-Kaufmann, Los Altos CA. Reprinted in Computers
+                      for AI Applications, B. Wah and G. J. Li (eds.), IEEE Computer Society Press, 1986.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1982</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"Three Flavors of Parallelism"</em></strong></p>
+                    <p>Proceedings of the Fourth National Conference, Canadian Society for Studies of Intelligence,
+                      Saskatoon, Saskatchewan.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1981</em></p>
+                    <p><strong>Fahlman, S. E., D. S. Touretzky, and W. van Roggen
+                        <em>"Cancellation in a Parallel Semantic Network"</em></strong></p>
+                    <p>Proceedings of IJCAI-81, Vancouver, British Columbia.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1981</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"Computing Facilities for AI: A Survey of Present and Near-Future Options"</em></strong></p>
+                    <p>AI Magazine, March 1981. Reprinted in Computers for AI Applications, B. Wah and G. J. Li (eds.),
+                      IEEE Computer Society Press, 1986. Also reprinted in Readings from the AI Magazine, R. Engelmore
+                      (ed.), AAAI Press, 1988.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1981</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"Representing Implicit Knowledge"</em></strong></p>
+                    <p>in Parallel Models of Associative Memory, G. E. Hinton and J. A. Anderson (eds.), Erlbaum
+                      Associates, Hillsdale NJ.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1980</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"Design Sketch for a Million-Element NETL Machine"</em></strong></p>
+                    <p>Proceedings of AAAI-80 Conference, Morgan-Kaufmann, Los Altos CA. Reprinted in Computers for AI
+                      Applications, B. Wah and G. J. Li (eds.), IEEE Computer Society Press, 1986.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1980</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"The Hashnet Interconnection Scheme"</em></strong></p>
+                    <p>Technical Report, CMU Computer Science Department.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1979</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"NETL: A System for Representing and Using Real-World Knowledge"</em></strong></p>
+                    <p>MIT Press, Cambridge MA.</p>
+                  </li>
+                  <li class="highlighted">
+                    <p><em>1974</em></p>
+                    <p><strong>Fahlman, S. E.
+                        <em>"A Planning System for Robot Construction Tasks"</em></strong></p>
+                    <p>Artificial Intelligence 5 (1974), 1-49. Reprinted in Tutorial on Robotics, 2nd Edition, C. S. G.
+                      Lee, R. C. Gonzalez, and K. S. Fu (eds.), IEEE Computer Society Press, 1986.</p>
+                  </li>
+                </ul>
+                <p class="hide-items">Hide other items</p>
+              </section>
+            </div>
+            <div class="six wide column">
+              <section>
+                <h3>Languages</h3>
+                <p class="tags small">
+                  <span class="language" lang="en">🇺🇸 ENGLISH</span>
+                </p>
+              </section>
+              <section>
+                <h3>SMILEY LORE :-)</h3>
+                <section class="smiley-story">
+                  <p>Yes, I am the inventor of the sideways “smiley face” (sometimes called an “emoticon”) that is
+                    commonly used in E-mail, chat, and newsgroup posts. The historic day was September 19, 1982.</p>
+                  <p>We had local email and had just gained the possibility of email to a few other universities on the
+                    primitive networks. But this was text only, using only the U.S. English alphabet, so we didn’t have
+                    much to work with.</p>
+                  <p>The unique character sequences caught on quickly at Carnegie Mellon and proceeded to infiltrate
+                    computer network message boards at other universities and research labs around the world. Within a
+                    few months, different “smileys” emerged, and before long, there were dozens of them.</p>
+                  <p>I didn’t keep the original post where I made the emoticon suggestion, largely because I didn’t
+                    think it was that big of a deal. But when the smiley face turned into a full-blown phenomenon, I
+                    knew I had to seriously look for it.</p>
+                  <p>This was 10 minutes of my life, just part of a silly online discussion more than 35 years ago. So,
+                    it’s kind of a strange thing to be famous for, but it’s fun to be a little bit famous for something.
+                    I’ve come to accept that no matter what I achieve in my career as an AI researcher, the first
+                    sentence of my obituary will talk about the smiley face invention. If I’ve prevented some online
+                    misunderstandings along the way, and if people have had fun with these things, then I guess that 10
+                    minutes was well spent.</p>
+                </section>
+                <p>The emoticon Fahlman posted to the local bulletin board looked like this:
+                <section class="smiley-message">
+                  <span>New message</span>
+                  <span><span>date: </span><span>19-Sep-82 11:44</span></span>
+                  <span><span>from: </span><span>Scott E Fahlman</span></span>
+                  <span><span>subject: </span><span>Scott E Fahlman :-)</span></span>
+                  <span><q>I propose that the following character sequence for joke markers: :-) Read it
+                      sideways.Actually, it is probably more economical to mark things that are NOT jokes, given current
+                      trends. For this, use :-(</q></span>
+                </section>
+              </section>
+              <section>
+                <h3>Character</h3>
+                <p>Motivation. Critical thinking. Purposefulness. Confidence. Curiosity. Optimism. Flexibility of the
+                  mind. Willingness to take risks. Independence of thinking. The ability to perceive new ideas. Fantasy.
+                  Perseverance. Concentration of attention. Figurative thinking. Sense of humor. Discipline.</p>
+              </section>
+              <section>
+                <h3>Likes😇</h3>
+                <p>Quotes. Digital photography. Cooking. Writing. Logics. Numbers. Technologies. Accuracy. Books.
+                  Sudoku. Stars. Intellect. Laws. Speed. Greens. Porcelain. Architecture. History. Ancient castles.
+                  Sausages. Road. Sea. Islands. Nature. Travels. Blue colour.</p>
+              </section>
+              <section>
+                <h3>Dislikes😞</h3>
+                <p>Gambling. Mouse. Reptiles. Chaos. Height. Pointless chatter. Incompetence. Arrogance.
+                  Irresponsibility. Envy. Lies. Cruelty. Impudence. Rudeness. Wars. Wind. Mud. Potatoes. The smell of
+                  cigarettes.</p>
+              </section>
+              <section>
+                <h3>Favorite quotes</h3>
+                <ul class="quotes">
+                  <li>
+                    <p><q>The secret to doing good research is always to be a little underemployed. You waste years by
+                        not being able to waste hours.</q>
+                      <cite>Amos Tversky</cite>
+                    </p>
+                  </li>
+                  <li>
+                    <p><q>If a machine is expected to be infallible, it cannot also be intelligent.</q>
+                      <cite>Alan Turing</cite>
+                    </p>
+                  </li>
+                  <li>
+                    <p><q>Nothing is less productive than to make more efficient what should not be done at all.</q>
+                      <cite>Peter Drucker</cite>
+                    </p>
+                  </li>
+                  <li>
+                    <p><q>The best ideas come as jokes. Make your thinking as funny as possible.</q>
+                      <cite>David M. Ogilvy</cite>
+                    </p>
+                  </li>
+                  <li>
+                    <p><q>First things first, but not necessarily in that order.</q>
+                      <cite>Dr. Who</cite>
+                    </p>
+                  </li>
+                  <li>
+                    <p><q>A manager should be like the sweeper in curling: The sweeper runs ahead of the stone and
+                        sweeps away debris from the path of the stone so that the progress of the stone will be smooth
+                        and undisturbed.</q>
+                      <cite>Richard P. Gabriel</cite>
+                    </p>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer>
+    <q><em>Sometimes I know how Dr. Frankenstein felt ...</em></q>
+  </footer>
+  <script src="./assets/scripts/hide.js"></script>
+  <script src="./assets/scripts/moving-smileys.js"></script>
 </body>
 
 </html>
