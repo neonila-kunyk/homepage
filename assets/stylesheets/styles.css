@@ -1,8 +1,8 @@
 ::-moz-selection {
-  background: yellow;
+  background:  #ffc93b;
 }
 ::selection {
-  background: yellow;
+  background:  #ffc93b;
 }
 *,
 *::before,
@@ -69,14 +69,11 @@ h2 {
   font-size: 3rem;
   letter-spacing: 0.25em;
 }
-h2 + p {
-  font-weight: 300;
-  font-size: 1.5rem;
-  margin-bottom: 0.25em;
-}
 h3 {
-  font-weight: 700;
-  font-size: 1.25rem;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+  font-size: 1.5rem;
   letter-spacing: 0.15em;
 }
 h4 {
@@ -154,11 +151,10 @@ ol.inverted > li::before {
   font-weight: normal;
 }
 a {
-  color: blue;
+  color: rgb(160, 100, 10);
   background-color: transparent;
   text-decoration: none;
 }
-/* a[rel="external"]:not(.label):hover, */
 a.language:hover span {
   text-decoration: underline;
 }
@@ -295,10 +291,6 @@ article {
   flex-wrap: wrap;
   align-items: stretch;
   padding: 0;
-  /**
-   * Temporary hack to be sure avatar
-   * is rendered on print preview
-   */
   display: block !important;
 }
 .grid .grid {
@@ -315,9 +307,20 @@ article {
   justify-content: inherit;
   align-items: stretch;
   width: 100% !important;
-  padding: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+  outline: 10px solid #ffc93b;
+}
+.row:first-child {
+  background-color: #ffc93b;
+  padding-bottom: 4em;
+}
+@media only screen and (max-width: 767px) {
+  .row:first-child {
+    padding-bottom: 0em;
+  }
+}
+.row:last-child {
+  padding-top: 2.5em;
 }
 
 /* Columns */
@@ -388,6 +391,21 @@ article {
   text-align: center;
 }
 
+/*Specific column styles*/
+.grid > .row > [class*="five wide"].column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.grid > .row > [class*="sixteen wide"].column{
+  background-color: #ffc93b;
+}
+@media only screen and (max-width: 767px) {
+  .grid > .row > [class*="five wide"].column{
+    align-items: center;
+  }
+}
+
 /* Stackable */
 @media only screen and (max-width: 767px) {
   .stackable.grid > .row > .wide.column,
@@ -398,23 +416,7 @@ article {
   .stackable.grid > .column:not(.row),
   .grid > .stackable.row > .column {
     width: 100% !important;
-    padding: 1em !important;
-  }
-}
-
-/* Mobile only column */
-[class*="mobile only"].grid,
-.grid > [class*="mobile only"].row,
-.grid > [class*="mobile only"].column,
-.grid > .row > [class*="mobile only"].column {
-  display: none;
-}
-@media only screen and (max-width: 767px) {
-  [class*="mobile only"].grid,
-  .grid > [class*="mobile only"].row,
-  .grid > [class*="mobile only"].column,
-  .grid > .row > [class*="mobile only"].column {
-    display: block;
+    padding: 0.5em !important;
   }
 }
 
@@ -438,13 +440,11 @@ article {
   }
 }
 
-/* Divider */
-.divider {
-  border-top: 1px solid rgba(222, 222, 222, 1);
-}
-.divider.fat {
-  border-top: 0.3571428571428571em solid rgba(10, 10, 10, 1);
-  width: 33%;
+/* Introduction*/
+.intro {
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1em 0;
 }
 
 /* Language */
@@ -477,26 +477,31 @@ article {
   margin-right: 0.5em;
 }
 
+/* Name*/
+.name{
+  font-family: 'Stardos Stencil', cursive;
+  font-weight: 500;
+  font-size: 4em;
+}
+
 /* Job */
 .job {
-  margin-bottom: 0.25rem;
+  margin: 1rem 0;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 /* Contacts */
 .contacts {
   list-style: none outside none;
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
-  white-space: nowrap;
-  font-size: 0.9em;
+  font-size: 2em;
   font-weight: 400;
 }
 .contacts li {
-  margin-bottom: 0.25rem;
-  margin-right: 1em;
+  margin: 0.5em 1em 0.5em 0;
 }
 .contacts li::before {
   display: none;
@@ -505,42 +510,22 @@ article {
   color: black;
   transition: color 0.2s ease-in-out;
 }
-.contacts li a.facebook:hover {
-  color: #3b5998;
+.contacts li a span{
+  vertical-align: middle;
 }
-.contacts li a.github:hover {
-  color: dimgrey;
-}
-.contacts li a.mail:hover {
-  color: dimgrey;
-}
-.contacts li a.skype:hover {
-  color: #00aff0;
-}
-.contacts li a.linkedin:hover {
-  color: #0077b5;
-}
-.contacts li a.telegram:hover {
-  color: #08c;
-}
-.contacts li a.phone:hover {
-  color: dimgrey;
+.contacts li a:hover {
+  color: #dad8d8;
 }
 .contacts li a.website {
   display: none;
 }
 .contacts li a .icon {
   fill: currentColor;
-  height: 1.1428rem;
+  height: 2rem;
   vertical-align: text-bottom;
 }
 
 @media only screen and (max-width: 767px) {
-  .name,
-  .job,
-  .contacts {
-    text-align: center;
-  }
   .contacts li {
     margin-right: 0;
   }
@@ -553,7 +538,7 @@ article {
 }
 
 /* Native <details> element styling */
-details {
+/* details {
   display: block;
 }
 details > summary::-webkit-details-marker {
@@ -571,7 +556,7 @@ details > div::after {
   content: " ";
   clear: both;
   display: block;
-}
+} */
 
 /* Alternative to <details> compatible with Safari */
 .details > input {
@@ -645,11 +630,11 @@ li.details::before {
 }
 li.details > input {
   float: left;
-  margin-left: -1.5em;
+  margin-left: -1.9em;
 }
 
-/* Highlighted list item */
-li.highlighted {
+/* Highlighted item */
+.highlighted {
   padding: 0.5em;
   background: rgba(0, 0, 0, 0.04);
   border-radius: 4px;
@@ -691,6 +676,12 @@ li.bordered > ul > details > div {
 }
 .timeline > li p {
   margin: 0;
+}
+
+/*Honors*/
+ul.marked > li::before{
+  display: inline-block;
+  margin-left: -0.5em;
 }
 
 /* Tags */
@@ -880,16 +871,7 @@ main {
   position: relative;
 }
 footer {
-  font-family:
-  apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  Roboto,
-  Oxygen-Sans,
-  Ubuntu,
-  Cantarell,
-  "Helvetica Neue",
-  sans-serif;
+  font-family: "Arial", sans-serif;
   height: 4em;
   position: fixed;
   bottom: 0;
