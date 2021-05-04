@@ -94,9 +94,6 @@ p:last-child {
 strong {
   font-weight: 600;
 }
-small {
-  font-size: 80%;
-}
 ul,
 ol {
   list-style: none outside none;
@@ -217,11 +214,6 @@ button:-moz-focusring,
 [type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
-}
-
-/* Utiltities */
-.nowrap {
-  white-space: nowrap;
 }
 
 /* Article */
@@ -440,7 +432,6 @@ article {
 /* Language */
 .language {
   font-weight: 600;
-  white-space: nowrap;
 }
 
 /* Labels */
@@ -674,10 +665,6 @@ ul.marked > li::before {
   margin-left: -0.5em;
 }
 
-/* Tags */
-.tags.small {
-  font-size: 0.88em;
-}
 .tags.bulleted .tag:not(:last-child)::after {
   content: "●";
   display: inline-block;
